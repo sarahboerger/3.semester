@@ -1,0 +1,88 @@
+$main-font: arial;
+$text-col: black;
+$main-col: rgb(182, 182, 182);
+$back-col: #ddd;
+$no: none;
+$none: 0px;
+$width: 400px;
+$pad: 15px $none;
+$marg: $none 25%;
+$radius: 7px 7px 0px 0px;
+$border: 3px solid $text-col;
+
+*{
+    margin: $none;
+}
+
+body{
+    background-color: $back-col;
+}
+
+header{
+    background-color: $main-col;
+    border-bottom: $border;
+    h1{
+        padding: $pad;
+    }
+    .menu {
+        list-style: $no;
+        font-weight: 600;
+        li {
+            display: inline;   
+            a{
+                font-family: $main-font;
+                text-decoration: $no;
+                border: 1px solid $text-col;
+                border-bottom: $no;
+                border-radius: $radius;
+                color: $text-col;
+                padding: 3px;
+                &:hover{
+                    color: lighten($main-col,10%);
+                }
+            }
+        }
+    }
+}
+
+
+
+.information{
+    margin: $marg;
+    h2{
+        padding: $pad;
+    }
+}
+
+
+.box{
+    margin: $marg;
+    h3, h4{
+        padding: $pad;
+    }
+    img{
+        width: $width;
+    }
+}
+
+
+footer{
+    padding: 30px;
+    margin: 30px $none $none $none;
+    display: flex;
+    background-color: $main-col;
+    border-top: $border;
+    .socials{
+        list-style: $no;
+        font-weight: 600;
+        li {
+            display: inline;   
+            a{
+                font-family: $main-font;
+                text-decoration: $no;
+                color: $text-col;
+                padding: 3px;
+            }
+        }
+    }
+}
