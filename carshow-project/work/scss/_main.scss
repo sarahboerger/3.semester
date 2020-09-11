@@ -1,0 +1,30 @@
+.menu-bar{
+    padding-top: 400px;
+   color: rgb(211, 211, 211);
+    background-image: url(img/jaguar-etype.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    a{
+        color: rgb(211, 211, 211);
+        text-decoration: none;
+    }
+}
+
+.btn-primary{
+    color:white;
+    background-color: $green;
+    border-color: darken($green, 3%);
+    &:hover {
+        background-color: darken($green, 3%);
+        border-color: darken($green, 6%);
+    }
+}
+
+.card{
+    background-color: $grey;
+    margin: 5px;
+}
+
+.list-group-item{
+    background-color: $grey;
+}
